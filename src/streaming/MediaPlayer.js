@@ -1091,6 +1091,14 @@ function MediaPlayer() {
     function getXHRWithCredentialsForType(type) {
         return mediaPlayerModel.getXHRWithCredentialsForType(type);
     }
+	
+	/**
+	 * Gets ABR controller
+	 * Rebecca
+	 */
+	function getABRController() {
+	    return abrController;
+	}
 
     /*
     ---------------------------------------------------------------------------
@@ -2228,6 +2236,7 @@ function MediaPlayer() {
         getVersion: getVersion,
         getDebug: getDebug,
         getBufferLength: getBufferLength,
+        getABRController: getABRController,
         getTTMLRenderingDiv: getTTMLRenderingDiv,
         getVideoElement: getVideoElement,
         getSource: getSource,
