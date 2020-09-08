@@ -1100,6 +1100,14 @@ function MediaPlayer() {
     function getXHRWithCredentialsForType(type) {
         return mediaPlayerModel.getXHRWithCredentialsForType(type);
     }
+	
+	/**
+     * Gets ABR controller
+     * Rebecca
+     */
+    function getABRController() {
+        return abrController;
+    }
 
     /*
     ---------------------------------------------------------------------------
@@ -2302,6 +2310,7 @@ function MediaPlayer() {
         getSettings: getSettings,
         updateSettings: updateSettings,
         resetSettings: resetSettings,
+		getABRController: getABRController,
         reset: reset
     };
 
