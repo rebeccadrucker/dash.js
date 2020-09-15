@@ -658,6 +658,7 @@ function AbrController() {
         registerStreamType: registerStreamType,
         unRegisterStreamType: unRegisterStreamType,
         setConfig: setConfig,
+		useBufferOccupancyABR: useBufferOccupancyABR,
         reset: reset
     };
 
